@@ -1,0 +1,75 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color:#fff;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+#app {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+/**Note SideBar*/
+
+.note-sidebar {
+    background-color: #fff;
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.folder {
+    display: flex;
+        justify-items: center;
+        justify-content: space-evenly;
+        flex-flow: column wrap;
+    padding: 10px;
+    margin: 2;
+    border-radius: 5%;
+}
+.notelist-item {
+    margin-bottom: 1em;
+}
+.notelist-item:hover * {
+    background-color: yellow;
+}
+.notelist-item.selected *{
+    background-color:green;
+}
+
+/**Note Editor*/
+
+.note_editor {
+    display:flex;
+        flex-direction: column;
+        flex-grow: 1;
+    visibility: visible;
+    padding: 1em 1em;
+    background-color:#fff;
+}
+
+.note_editor * {
+    width: 100%;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.note_title {
+    background: none;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 1em;
+    color: #444;
+}
+
+.note_body {
+    flex-grow: 1;
+    width: 100%;
+    margin-top: 1em;
+}
